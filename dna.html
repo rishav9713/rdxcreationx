@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DNA PRELOADER</title>
+    <style>
+      body{
+  margin: 0px;
+  background: #121212;
+}
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:50%;
+  left:45%;
+  transform: rotate(-90deg) translate(-50%,-50%);
+}
+.line{
+  height: 2px;
+  width: 30px;
+  background: white;
+  margin-top: 50px;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  animation: anime 1s ease infinite;
+}
+.line::before{
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: rgb(209,0,101);
+  border-radius: 50%;
+  position: absolute;
+  left:0%;
+  margin-top:-4px;
+}
+.line::after{
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: rgb(209,0,101);
+  border-radius: 50%;
+  position: absolute;
+  left:100%;
+  margin-top:-4px;
+}
+.line1{
+  margin-top: 50px;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+.line2{
+  margin-top: 80px;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+}
+.line3{
+  margin-top: 110px;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+}
+.line4{
+  margin-top: 140px;
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+}
+.line5{
+  margin-top: 170px;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+.line6{
+  margin-top: 200px;
+  animation-delay: 0.6s;
+  animation-duration: 1s;
+}
+.line7{
+  margin-top: 230px;
+  animation-delay: 0.7s;
+  animation-duration: 1s;
+}
+.line8{
+  margin-top: 260px;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+@keyframes anime
+{
+  0%{
+    width:30px;
+  }
+  50%{
+    width:0px;
+  }
+  100%{
+    width: 30px;
+  }
+}
+.msg{
+  font-family: arial;
+  font-size: 8px;
+  color:white;
+  letter-spacing: 2px;
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+    </style>
+  </head>
+  <body>
+
+
+    <div id="main">
+  <div class="line line1"></div>
+  <div class="line line2"></div>
+  <div class="line line3"></div>
+  <div class="line line4"></div>
+  <div class="line line5"></div>
+  <div class="line line6"></div>
+  <div class="line line7"></div>
+  <div class="line line8"></div>
+</div>
+<div class="msg">LOADING DNA</div>
+
+
+  </body>
+</html>
