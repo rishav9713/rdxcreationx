@@ -3,5 +3,5 @@
 
  :construction: :construction: :construction: 
 
-:warning: Site is Under Construction Please wait while a min and come again. :warning:
+:warning: Site is Under Construction Please wait a min and come again. :warning:
 
